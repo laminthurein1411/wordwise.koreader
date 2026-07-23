@@ -23,7 +23,7 @@ def main():
                                   formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("input", help="input TSV file (word<TAB>difficulty<TAB>pos)")
     ap.add_argument("--outdir", default=".", help="directory for output txt files")
-    ap.add_argument("--prefix", default="difficulty_", help="output filename prefix")
+    ap.add_argument("--prefix", default="", help="output filename prefix")
     args = ap.parse_args()
 
     words_by_level = defaultdict(list)
